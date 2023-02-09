@@ -25,8 +25,6 @@ export default {
 @import "@/styles/mixins";
 
 .card {
-  max-width: 330px;
-  min-width: 300px;
   border-radius: 8px;
   padding: 1rem;
   background-color: $white;

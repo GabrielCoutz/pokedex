@@ -27,7 +27,12 @@ export default {
 
   methods: {
     sendToDetailsPage() {
-      this.$router.push({ name: "Detalhes", params: { name: this.busca } });
+      const pokemonName = this.cleanPokemonName(this.busca);
+      this.$router.push({ name: "Detalhes", params: { name: pokemonName } });
+    },
+
+    cleanPokemonName(name) {
+      return name.trim().toLowerCase();
     },
   },
 

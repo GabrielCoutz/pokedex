@@ -1,7 +1,5 @@
 <template>
-  <div v-if="pokemon" class="container">
-    <Card />
-  </div>
+  <Card v-if="pokemon" />
 </template>
 
 <script>
@@ -12,7 +10,7 @@ export default {
   components: {
     Card,
   },
-  
+
   computed: {
     ...mapState(["pokemon"]),
   },

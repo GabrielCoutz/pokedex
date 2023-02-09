@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="details">
     <Button class="link" v-if="!loading">
       <router-link to="/">Voltar</router-link>
     </Button>
@@ -49,6 +49,12 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/styles/globals";
+
+.details {
+  margin: 0 auto;
+  max-width: 350px;
+  width: 100%;
+}
 
 .link {
   display: grid;

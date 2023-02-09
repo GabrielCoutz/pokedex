@@ -1,13 +1,13 @@
 <template>
-  <h1>Carregando...</h1>
+  <h1 class="loading">Carregando...</h1>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+.loading {
+  text-align: center;
+}
 </style>
