@@ -13,6 +13,14 @@
       <div>
         <img :src="pokemon.sprites.front_default" :alt="pokemon.name" />
       </div>
+      <ul>
+        <li v-for="{ name, img } in pokemon.evolution" :key="name">
+          <div>
+            <span>{{ name }}</span>
+            <img :src="img" :alt="name" />
+          </div>
+        </li>
+      </ul>
     </div>
     <ul>
       <li v-for="item in pokemon.stats" :key="item.stat">

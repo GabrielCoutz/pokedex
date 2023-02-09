@@ -1,4 +1,4 @@
-import { api, getPokemonColor } from "@/services";
+import { api, getPokemonColor, getPokemonEvolution } from "@/services";
 import { createStore } from "vuex";
 
 export default createStore({
@@ -14,8 +14,10 @@ export default createStore({
   actions: {
     async getPokemon(context, payload) {
       const response = await api.get(payload);
+      console.log(response.data);
       const color = await getPokemonColor(response.data.species.url);
-      context.commit("SET_POKEMON", { ...response.data, color });
+      const evolution = await getPokemonEvolution(payload);
+      context.commit("SET_POKEMON", { ...response.data, color, evolution });
     },
   },
   modules: {},
