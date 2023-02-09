@@ -54,6 +54,7 @@ export default {
   margin: 0 auto;
   max-width: 350px;
   width: 100%;
+  padding: 0 1rem;
 }
 
 .link {

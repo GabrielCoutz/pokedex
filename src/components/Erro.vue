@@ -1,9 +1,7 @@
 <template>
-  <div class="erro">
-    <h1>
-      {{ erro }}
-    </h1>
-  </div>
+  <h1 class="erro">
+    {{ erro }}
+  </h1>
 </template>
 
 <script>
