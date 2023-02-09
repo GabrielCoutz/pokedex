@@ -11,9 +11,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/variables";
+
 footer {
-  background-color: rgb(236, 73, 236);
+  background-color: $primary-color;
   padding: 2rem;
   text-align: center;
+  color: white;
+  font-family: monospace;
 }
 </style>
