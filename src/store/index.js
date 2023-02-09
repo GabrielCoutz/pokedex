@@ -27,7 +27,6 @@ export default createStore({
       context.commit("SET_LOADING", true);
       try {
         const response = await api.get(payload);
-
         const color = await getPokemonColor(response.data.species.url);
         const evolution = await getPokemonEvolution(payload);
         context.commit("SET_POKEMON", { ...response.data, color, evolution });

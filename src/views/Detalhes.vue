@@ -1,14 +1,23 @@
 <template>
-  <div v-if="loading">Carregando...</div>
-  <PokemonList v-else-if="pokemon" />
-  <div v-else>
-    <h1>{{ erro || "Não foi possível encontrar o que você procura =/" }}</h1>
-    <router-link to="/">Voltar</router-link>
-  </div>
+  <section class="container">
+    <Button>
+      <router-link to="/">Voltar</router-link>
+    </Button>
+
+    <Loading v-if="loading" />
+
+    <PokemonList v-else-if="pokemon" />
+
+    <Erro v-else />
+  </section>
 </template>
 
 <script>
 import PokemonList from "@/components/PokemonList.vue";
+import Erro from "@/components/Erro.vue";
+import Loading from "@/components/Loading.vue";
+import Button from "@/components/Button.vue";
+
 import { mapState } from "vuex";
 
 export default {
@@ -31,8 +40,13 @@ export default {
 
   components: {
     PokemonList,
+    Erro,
+    Loading,
+    Button,
   },
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+@import "@/styles/globals";
+</style>

@@ -9,7 +9,7 @@ import Busca from "@/components/Busca.vue";
 import PokemonList from "@/components/PokemonList.vue";
 
 export default {
-  name: "home",
+  name: "Home",
   components: { Busca, PokemonList },
 };
 </script>

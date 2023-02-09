@@ -1,18 +1,17 @@
 <template>
   <form @submit.prevent>
-    <input type="text" v-model="busca" placeholder="pikachu, charmander..." />
-    <router-link
-      :to="{ name: 'Detalhes', params: { name: busca } }"
-      class="button"
-      >Buscar</router-link
-    >
-    <Erro />
+    <input
+      type="text"
+      v-model="busca"
+      placeholder="pikachu, charmander..."
+      required
+    />
+    <Button @click="sendToDetailsPage">Buscar</Button>
   </form>
 </template>
 
 <script>
 import { mapState } from "vuex";
-import Erro from "@/components/Erro.vue";
 import Button from "@/components/Button.vue";
 
 export default {
@@ -26,8 +25,13 @@ export default {
     ...mapState(["loading"]),
   },
 
+  methods: {
+    sendToDetailsPage() {
+      this.$router.push({ name: "Detalhes", params: { name: this.busca } });
+    },
+  },
+
   components: {
-    Erro,
     Button,
   },
 };

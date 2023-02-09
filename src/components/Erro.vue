@@ -1,11 +1,14 @@
 <template>
-  <div v-if="erro">
-    {{ erro }}
+  <div class="erro">
+    <h1>
+      {{ erro }}
+    </h1>
   </div>
 </template>
 
 <script>
 import { mapState } from "vuex";
+
 export default {
   computed: {
     ...mapState(["erro"]),
@@ -13,4 +16,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.erro {
+  text-align: center;
+}
+</style>
