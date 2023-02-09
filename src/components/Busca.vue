@@ -14,7 +14,7 @@ export default {
   },
   methods: {
     searchPokemon() {
-      this.$store.dispatch("getPokemon", this.busca);
+      this.$store.dispatch("getPokemon", this.busca.toLocaleLowerCase());
     },
   },
 };

@@ -9,3 +9,8 @@ export const api = {
     return axiosInstance.get(endpoint);
   },
 };
+
+export async function getPokemonColor(url) {
+  const { data } = await axios.get(url);
+  return data.color.name;
+}
