@@ -13,14 +13,16 @@ export default {
 <style lang="scss" scoped>
 @import "@/styles/variables";
 @import "@/styles/globals";
+@import "@/styles/mixins";
 
 .wrapperHeader {
-  background-color: $primary-color;
+  background-color: $white;
+  @include box-shadow;
 
   .header {
     padding: 1rem;
     text-align: center;
-    color: white;
+    color: $black;
     font-family: monospace;
     font-size: 1.5rem;
   }

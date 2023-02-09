@@ -21,9 +21,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/variables";
+@import "@/styles/mixins";
+
 .card {
   max-width: 330px;
+  min-width: 300px;
   border-radius: 8px;
   padding: 1rem;
+  background-color: $white;
+  @include box-shadow;
 }
 </style>

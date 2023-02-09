@@ -16,13 +16,13 @@ export default {
 @import "@/styles/variables";
 
 .wrapperFooter {
-  background-color: $primary-color;
+  background-color: $white;
 
   .footer {
-    padding: 2rem;
-    font-size: 1.2rem;
+    padding: 0.5rem;
+    font-size: 0.9rem;
     text-align: center;
-    color: white;
+    color: $black;
     font-family: monospace;
   }
 }

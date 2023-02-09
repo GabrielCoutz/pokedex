@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="container home">
     <Busca />
   </section>
 </template>
@@ -16,4 +16,9 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/styles/globals";
+
+.home {
+  width: 100%;
+  
+}
 </style>

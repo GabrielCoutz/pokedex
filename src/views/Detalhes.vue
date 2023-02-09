@@ -1,8 +1,8 @@
 <template>
   <section class="container">
-    <Button>
-      <router-link to="/">Voltar</router-link>
-    </Button>
+    <router-link to="/">
+      <Button>Voltar</Button>
+    </router-link>
 
     <Loading v-if="loading" />
 

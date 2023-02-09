@@ -16,7 +16,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./styles/reset.scss";
+@import "@/styles/reset.scss";
+@import "@/styles/variables";
 
 #app {
   display: flex;
@@ -26,5 +27,8 @@ export default {
 
 #main {
   flex: 1;
+  display: grid;
+  align-items: center;
+  background-color: $bg-color;
 }
 </style>

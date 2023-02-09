@@ -17,22 +17,26 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
 
 .button {
-  background-color: $primary-color;
+  background-color: $white;
   border: none;
   padding: 0.5rem 1rem;
-  color: white;
+  color: $black;
   font-family: monospace;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: 0.3s all;
   outline: none;
+  border-radius: $border-radius;
+  margin: 0 auto 1rem auto;
 
   &:hover,
   &:active,
   &:focus {
-    background-color: $primary-color-hover;
+    @include box-shadow;
+    transform: scale(0.99);
   }
 }
 </style>
