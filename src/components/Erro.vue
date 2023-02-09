@@ -1,5 +1,5 @@
 <template>
-  <div if="erro">
+  <div v-if="erro">
     {{ erro }}
   </div>
 </template>
@@ -8,7 +8,7 @@
 import { mapState } from "vuex";
 export default {
   computed: {
-    ...mapState(["loading"]),
+    ...mapState(["erro"]),
   },
 };
 </script>

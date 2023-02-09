@@ -1,5 +1,5 @@
 <template>
-  <div v-if="pokemon">
+  <div v-if="pokemon" class="container">
     <Card />
   </div>
 </template>
@@ -18,4 +18,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+@import "@/styles/globals";
+</style>

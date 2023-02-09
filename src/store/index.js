@@ -7,7 +7,7 @@ export default createStore({
     erro: null,
     loading: false,
   },
-  getters: {},
+
   mutations: {
     SET_POKEMON(state, payload) {
       state.pokemon = payload;
@@ -21,6 +21,7 @@ export default createStore({
       state.loading = payload;
     },
   },
+
   actions: {
     async getPokemon(context, payload) {
       context.commit("SET_LOADING", true);
@@ -37,5 +38,4 @@ export default createStore({
       }
     },
   },
-  modules: {},
 });

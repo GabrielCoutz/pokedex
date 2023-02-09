@@ -1,7 +1,11 @@
 <template>
   <form @submit.prevent>
     <input type="text" v-model="busca" placeholder="pikachu, charmander..." />
-    <Button @click="searchPokemon" >Buscar</Button>
+    <router-link
+      :to="{ name: 'Detalhes', params: { name: busca } }"
+      class="button"
+      >Buscar</router-link
+    >
     <Erro />
   </form>
 </template>
@@ -14,17 +18,14 @@ import Button from "@/components/Button.vue";
 export default {
   data() {
     return {
-      busca: "",
+      busca: "pikachu",
     };
   },
-  methods: {
-    searchPokemon() {
-      this.$store.dispatch("getPokemon", this.busca.toLocaleLowerCase());
-    },
-  },
+
   computed: {
     ...mapState(["loading"]),
   },
+
   components: {
     Erro,
     Button,
@@ -33,10 +34,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/globals.scss";
+
 form {
   display: flex;
   flex-direction: column;
   max-width: 200px;
+  margin: 0 auto;
 
   input {
     padding: 0.3rem 0;

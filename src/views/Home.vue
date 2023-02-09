@@ -1,7 +1,6 @@
 <template>
-  <section>
+  <section class="container">
     <Busca />
-    <PokemonList />
   </section>
 </template>
 
@@ -14,3 +13,7 @@ export default {
   components: { Busca, PokemonList },
 };
 </script>
+
+<style lang="scss" scoped>
+@import "@/styles/globals";
+</style>

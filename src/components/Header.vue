@@ -1,5 +1,7 @@
 <template>
-  <header>header</header>
+  <header class="wrapperHeader">
+    <div class="container header">Busque seu pokemon favorito!</div>
+  </header>
 </template>
 
 <script>
@@ -9,16 +11,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-nav {
-  padding: 30px;
+@import "@/styles/variables";
+@import "@/styles/globals";
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+.wrapperHeader {
+  background-color: $primary-color;
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+  .header {
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    font-size: 1.5rem;
   }
 }
 </style>

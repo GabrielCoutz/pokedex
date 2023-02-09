@@ -1,6 +1,8 @@
 <template>
-  <footer>
-    <span>Todos direitos reservados</span>
+  <footer class="wrapperFooter">
+    <div class="footer">
+      <span>Todos direitos reservados</span>
+    </div>
   </footer>
 </template>
 
@@ -13,11 +15,15 @@ export default {
 <style lang="scss" scoped>
 @import "@/styles/variables";
 
-footer {
+.wrapperFooter {
   background-color: $primary-color;
-  padding: 2rem;
-  text-align: center;
-  color: white;
-  font-family: monospace;
+
+  .footer {
+    padding: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+  }
 }
 </style>
