@@ -1,9 +1,9 @@
 <template>
-  <div :style="{ border: `4px solid ${pokemon.color}` }">
+  <div :style="{ border: `4px solid ${pokemon.color}` }" class="card">
     <Info />
-    <Evolutions />
+    <Stats />
   </div>
-  <Stats />
+  <Evolutions />
 </template>
 
 <script>
@@ -20,4 +20,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.card {
+  max-width: 330px;
+  border-radius: 8px;
+  padding: 1rem;
+}
+</style>

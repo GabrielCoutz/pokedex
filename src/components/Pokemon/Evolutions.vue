@@ -1,12 +1,14 @@
 <template>
-  <ul>
-    <li v-for="{ name, img } in pokemon.evolution" :key="name">
-      <div>
-        <span>{{ name }}</span>
-        <img :src="img" :alt="name" />
-      </div>
-    </li>
-  </ul>
+  <div class="evolutions">
+    <ul>
+      <li v-for="{ name, img } in pokemon.evolution" :key="name">
+        <div>
+          <span>{{ name }}</span>
+          <img :src="img" :alt="name" />
+        </div>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>

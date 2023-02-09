@@ -1,12 +1,14 @@
 <template>
-  <ul>
-    <li v-for="item in pokemon.stats" :key="item.stat">
-      <div>
-        <span>{{ item.stat.name }}</span>
-        <span>{{ item.base_stat }}</span>
-      </div>
-    </li>
-  </ul>
+  <div class="stats">
+    <ul>
+      <li v-for="item in pokemon.stats" :key="item.stat">
+        <div>
+          <span>{{ item.stat.name }}</span>
+          <span>{{ item.base_stat }}</span>
+        </div>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
