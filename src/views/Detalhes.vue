@@ -1,8 +1,8 @@
 <template>
   <section class="container">
-    <router-link to="/">
-      <Button>Voltar</Button>
-    </router-link>
+    <Button class="link" v-if="!loading">
+      <router-link to="/">Voltar</router-link>
+    </Button>
 
     <Loading v-if="loading" />
 
@@ -49,4 +49,13 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/styles/globals";
+
+.link {
+  display: grid;
+  padding: 0;
+
+  a {
+    padding: 0.5rem 1rem;
+  }
+}
 </style>

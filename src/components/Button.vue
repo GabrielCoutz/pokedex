@@ -1,7 +1,6 @@
 <template>
-  <button :disabled="loading" class="button">
-    <span v-if="loading"> Carregando... </span>
-    <slot v-else></slot>
+  <button class="button">
+    <slot></slot>
   </button>
 </template>
 

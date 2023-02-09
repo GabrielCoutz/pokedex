@@ -3,7 +3,7 @@
     <input
       type="text"
       v-model="busca"
-      placeholder="pikachu, charmander..."
+      placeholder="pikachu, charmander ..."
       required
     />
     <button class="icon"></button>
@@ -17,7 +17,7 @@ import Button from "@/components/Button.vue";
 export default {
   data() {
     return {
-      busca: "pikachu",
+      busca: "",
     };
   },
 

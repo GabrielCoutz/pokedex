@@ -2,12 +2,11 @@
   <div class="info">
     <div class="topInfo">
       <div class="left">
-        <span>Weight</span>
-        <br />
+        <span class="label">Weight</span>
         <span>{{ pokemon.weight }}</span>
       </div>
       <div class="right">
-        <span>Type</span>
+        <span class="label">Type</span>
         <ul>
           <li v-for="{ type } in pokemon.types" :key="type">
             <span>{{ type.name }}</span>
@@ -39,6 +38,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/styles/variables";
+@import "@/styles/mixins";
 
 .info {
   .title {
@@ -53,10 +53,10 @@ export default {
     align-items: center;
 
     img {
-      border: 1px solid black;
+      border: 1px solid $c3;
       border-radius: 50%;
       overflow: hidden;
-      background: white;
+      background: $white;
     }
   }
 
@@ -64,6 +64,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include font-display;
 
     .left {
       text-align: start;
@@ -71,6 +72,13 @@ export default {
 
     .right {
       text-align: end;
+    }
+
+    .label {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+      display: block;
     }
   }
 }

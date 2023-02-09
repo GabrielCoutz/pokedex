@@ -19,9 +19,10 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/styles/variables";
+@import "@/styles/mixins";
 
 .stats {
-  border: 1px solid;
+  border: 1px solid $c3;
   padding: 0.7rem;
   border-radius: $border-radius;
 
@@ -30,9 +31,10 @@ export default {
     justify-content: space-between;
     text-transform: capitalize;
     padding: 0.4rem 0;
+    @include font-display;
 
     & + li {
-      border-top: 1px solid black;
+      border-top: 1px solid $c3;
     }
   }
 }
