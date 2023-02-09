@@ -44,6 +44,7 @@ export default {
   .title {
     text-align: center;
     padding: 0.3rem 1rem;
+    text-transform: capitalize;
   }
 
   .img {

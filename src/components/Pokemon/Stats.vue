@@ -1,14 +1,10 @@
 <template>
-  <div class="stats">
-    <ul>
-      <li v-for="item in pokemon.stats" :key="item.stat">
-        <div>
-          <span>{{ item.stat.name }}</span>
-          <span>{{ item.base_stat }}</span>
-        </div>
-      </li>
-    </ul>
-  </div>
+  <ul class="stats">
+    <li v-for="item in pokemon.stats" :key="item.stat">
+      <span>{{ item.stat.name }}</span>
+      <span>{{ item.base_stat }}</span>
+    </li>
+  </ul>
 </template>
 
 <script>
@@ -21,4 +17,23 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+@import "@/styles/variables";
+
+.stats {
+  border: 1px solid;
+  padding: 0.7rem;
+  border-radius: $border-radius;
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    padding: 0.4rem 0;
+
+    & + li {
+      border-top: 1px solid black;
+    }
+  }
+}
+</style>
