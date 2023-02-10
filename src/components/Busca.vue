@@ -43,9 +43,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/globals.scss";
-@import "@/styles/variables.scss";
-@import "@/styles/mixins.scss";
+@import "../styles/globals.scss";
+@import "../styles/variables.scss";
+@import "../styles/mixins.scss";
 
 form {
   margin: 0 auto;
@@ -64,9 +64,8 @@ form {
     width: 100%;
     border: 1px solid transparent;
     transition: 0.3s all;
-    flex: 1;
-    @include box-shadow;
 
+    @include box-shadow;
     @include device(small) {
       padding: 1rem;
       font-size: 1.2rem;

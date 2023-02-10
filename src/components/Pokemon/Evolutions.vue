@@ -28,10 +28,10 @@ export default {
 
 .evolutions {
   grid-column: 2;
-  background: $white;
   text-align: center;
   padding: 1rem 2rem;
   border-radius: $border-radius;
+  background-color: $white;
 
   @include device(large) {
     grid-column: 1;
