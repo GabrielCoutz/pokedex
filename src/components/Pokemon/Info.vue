@@ -41,6 +41,8 @@ export default {
 @import "@/styles/mixins";
 
 .info {
+  grid-column: 1;
+
   .title {
     text-align: center;
     padding: 0.3rem 1rem;

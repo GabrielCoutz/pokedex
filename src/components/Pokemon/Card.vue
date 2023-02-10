@@ -28,6 +28,7 @@ export default {
   border-radius: 8px;
   padding: 1rem;
   background-color: $white;
+  grid-column: 1;
   @include box-shadow;
 }
 </style>

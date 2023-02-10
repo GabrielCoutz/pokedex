@@ -1,11 +1,12 @@
 <template>
   <div class="evolutions">
+    <h2 class="title">Evoluções</h2>
     <ul>
       <li v-for="{ name, img } in pokemon.evolution" :key="name">
-        <div>
+        <router-link :to="{ name: 'Detalhes', params: { name } }">
           <span>{{ name }}</span>
           <img :src="img" :alt="name" />
-        </div>
+        </router-link>
       </li>
     </ul>
   </div>
@@ -21,4 +22,12 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.evolutions {
+  grid-column: 2;
+
+  .title {
+    text-align: center;
+  }
+}
+</style>

@@ -22,10 +22,10 @@ export async function getPokemonEvolution(pokemon) {
   const { url } = pokemonData.evolution_chain;
   const { data } = await axios.get(url);
 
-  return mapAllEvolutions(data.chain.evolves_to);
+  return mapAllEvolutions(pokemon, data.chain.evolves_to);
 }
 
-async function mapAllEvolutions([pokemon]) {
+async function mapAllEvolutions(currentPokemon, [pokemon]) {
   const evoChain = [];
   let evoData = pokemon;
 
@@ -33,10 +33,11 @@ async function mapAllEvolutions([pokemon]) {
     const evolutionName = evoData.species.name;
     const { data: evolutionImg } = await axiosInstance.get(evolutionName);
 
-    evoChain.push({
-      name: evolutionName,
-      img: evolutionImg.sprites.front_default,
-    });
+    if (evolutionName !== currentPokemon)
+      evoChain.push({
+        name: evolutionName,
+        img: evolutionImg.sprites.front_default,
+      });
 
     evoData = evoData["evolves_to"][0];
   } while (!!evoData && evoData.hasOwnProperty("evolves_to"));

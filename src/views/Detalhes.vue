@@ -52,9 +52,10 @@ export default {
 
 .details {
   margin: 0 auto;
-  max-width: 350px;
-  width: 100%;
   padding: 0 1rem;
+  display: grid;
+  grid-template-columns: minmax(350px, 1fr) auto;
+  gap: 0 3rem;
 }
 
 .link {
