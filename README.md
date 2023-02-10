@@ -23,6 +23,7 @@ _(claro, vocês que decidem :smirk:)_
 :white_check_mark: Atendendo aos requisitos
 
 :white_check_mark: Histórico de commits no repositório do projeto
+_PS: Alguns contém comentários com maiores informações._
 
 :white_check_mark: Layout responsivo
 
