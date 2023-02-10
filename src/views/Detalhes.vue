@@ -49,18 +49,27 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/styles/globals";
+@import "@/styles/mixins";
 
 .details {
-  margin: 0 auto;
+  margin: 1rem auto;
   padding: 0 1rem;
   display: grid;
   grid-template-columns: minmax(350px, 1fr) auto;
   gap: 0 3rem;
+
+  @include device(large) {
+    grid-template-columns: 1fr;
+    max-width: 370px;
+    width: 100%;
+  }
 }
 
 .link {
   display: grid;
   padding: 0;
+  grid-column: 1/-1;
+  margin-bottom: 2rem;
 
   a {
     padding: 0.5rem 1rem;

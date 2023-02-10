@@ -25,6 +25,10 @@ export default {
     color: $black;
     font-family: monospace;
     font-size: 1.5rem;
+
+    @include device(small) {
+      font-size: 1.2rem;
+    }
   }
 }
 </style>

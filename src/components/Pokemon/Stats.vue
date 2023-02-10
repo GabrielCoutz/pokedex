@@ -24,7 +24,7 @@ export default {
 .stats {
   border: 1px solid $c3;
   padding: 0.7rem;
-  border-radius: $border-radius;
+  border-radius: calc($border-radius / 2);
 
   li {
     display: flex;

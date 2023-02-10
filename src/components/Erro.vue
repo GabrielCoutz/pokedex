@@ -17,5 +17,7 @@ export default {
 <style lang="scss" scoped>
 .erro {
   text-align: center;
+  grid-row: 1;
+  grid-column: 1/-1;
 }
 </style>

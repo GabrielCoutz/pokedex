@@ -59,13 +59,18 @@ form {
     padding: 2rem 3rem;
     font-size: 1.4rem;
     text-align: center;
-    border-radius: 8px;
+    border-radius: $border-radius;
     outline: none;
     width: 100%;
     border: 1px solid transparent;
-    @include box-shadow;
     transition: 0.3s all;
     flex: 1;
+    @include box-shadow;
+
+    @include device(small) {
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
 
     &:hover,
     &:focus,
@@ -91,6 +96,15 @@ form {
     padding: 12px;
     transition: 0.3s all;
     z-index: 1;
+
+    @include device(small) {
+      width: 100%;
+      background: $white;
+      margin-top: 1rem;
+      grid-area: initial;
+      border-radius: $border-radius;
+      padding: 6px;
+    }
 
     &::before {
       content: url("@/assets/pokeball.svg");

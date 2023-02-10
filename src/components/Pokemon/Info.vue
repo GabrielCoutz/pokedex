@@ -6,7 +6,9 @@
         <span>{{ pokemon.weight }}</span>
       </div>
       <div class="right">
-        <span class="label">Type</span>
+        <span class="label">{{
+          pokemon.types.length > 1 ? "Types" : "Type"
+        }}</span>
         <ul>
           <li v-for="{ type } in pokemon.types" :key="type">
             <span>{{ type.name }}</span>
