@@ -8,6 +8,7 @@
 import { mapState } from "vuex";
 
 export default {
+  name: "Button",
   computed: {
     ...mapState(["loading"]),
   },

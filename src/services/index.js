@@ -19,6 +19,7 @@ export async function getPokemonEvolution(pokemon) {
   const { data: pokemonData } = await axios.get(
     `https://pokeapi.co/api/v2/pokemon-species/${pokemon}`
   );
+
   const { url } = pokemonData.evolution_chain;
   const { data } = await axios.get(url);
 

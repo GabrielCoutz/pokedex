@@ -13,6 +13,7 @@ import Evolutions from "./Evolutions.vue";
 import Stats from "./Stats.vue";
 
 export default {
+  name: "Card",
   components: { Info, Evolutions, Stats },
   computed: {
     ...mapState(["pokemon"]),

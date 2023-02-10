@@ -1,16 +1,16 @@
 <template>
   <section class="container home">
-    <Busca />
+    <SearchInput />
   </section>
 </template>
 
 <script>
-import Busca from "../components/Busca.vue";
+import SearchInput from "../components/SearchInput.vue";
 import PokemonList from "../components/PokemonList.vue";
 
 export default {
   name: "Home",
-  components: { Busca, PokemonList },
+  components: { SearchInput, PokemonList },
 };
 </script>
 

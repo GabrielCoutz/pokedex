@@ -2,7 +2,7 @@
   <form @submit.prevent="sendToDetailsPage">
     <input
       type="text"
-      v-model="busca"
+      v-model="SearchInput"
       placeholder="pikachu, charmander ..."
       required
     />
@@ -12,12 +12,13 @@
 
 <script>
 import { mapState } from "vuex";
-import Button from "../components/Button.vue";
+import Button from "./Button.vue";
 
 export default {
+  name: "SearchInput",
   data() {
     return {
-      busca: "",
+      SearchInput: "",
     };
   },
 
@@ -27,8 +28,8 @@ export default {
 
   methods: {
     sendToDetailsPage() {
-      const pokemonName = this.cleanPokemonName(this.busca);
-      this.$router.push({ name: "Detalhes", params: { name: pokemonName } });
+      const pokemonName = this.cleanPokemonName(this.SearchInput);
+      this.$router.push({ name: "Details", params: { name: pokemonName } });
     },
 
     cleanPokemonName(name) {

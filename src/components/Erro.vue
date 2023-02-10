@@ -8,6 +8,7 @@
 import { mapState } from "vuex";
 
 export default {
+  name: "Erro",
   computed: {
     ...mapState(["erro"]),
   },

@@ -7,6 +7,7 @@ import { mapState } from "vuex";
 import Card from "../components/Pokemon/Card.vue";
 
 export default {
+  name: "PokemonList",
   components: {
     Card,
   },

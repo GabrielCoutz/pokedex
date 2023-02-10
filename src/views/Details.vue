@@ -21,7 +21,7 @@ import Button from "../components/Button.vue";
 import { mapState } from "vuex";
 
 export default {
-  name: "Detalhes",
+  name: "Details",
   props: ["name"],
 
   methods: {

@@ -3,7 +3,7 @@
     <h2>Evoluções</h2>
     <ul class="list">
       <li v-for="{ name, img } in pokemon.evolution" :key="name">
-        <router-link :to="{ name: 'Detalhes', params: { name } }">
+        <router-link :to="{ name: 'Details', params: { name } }">
           <span class="evolutionName">{{ name }}</span>
           <img :src="img" :alt="name" />
         </router-link>
@@ -16,6 +16,7 @@
 import { mapState } from "vuex";
 
 export default {
+  name: "Evolutions",
   computed: {
     ...mapState(["pokemon"]),
   },

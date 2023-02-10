@@ -11,6 +11,7 @@
 import Button from "../components/Button.vue";
 
 export default {
+  name: "NotFound",
   components: {
     Button,
   },

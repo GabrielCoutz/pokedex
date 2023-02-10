@@ -7,15 +7,15 @@ const routes = [
     component: () => import("@/views/Home.vue"),
   },
   {
-    path: "/detalhes/:name",
-    component: () => import("@/views/Detalhes.vue"),
-    name: "Detalhes",
+    path: "/Details/:name",
+    component: () => import("@/views/Details.vue"),
+    name: "Details",
     props: true,
   },
   {
     path: "/:catchAll(.*)",
-    name: "NaoEncontrado",
-    component: () => import("@/views/NaoEncontrado.vue"),
+    name: "NotFound",
+    component: () => import("@/views/NotFound.vue"),
   },
 ];
 
