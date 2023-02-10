@@ -23,8 +23,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/variables";
-@import "@/styles/mixins";
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 .evolutions {
   grid-column: 2;

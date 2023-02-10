@@ -13,10 +13,10 @@
 </template>
 
 <script>
-import PokemonList from "@/components/PokemonList.vue";
-import Erro from "@/components/Erro.vue";
-import Loading from "@/components/Loading.vue";
-import Button from "@/components/Button.vue";
+import PokemonList from "../components/PokemonList.vue";
+import Erro from "../components/Erro.vue";
+import Loading from "../components/Loading.vue";
+import Button from "../components/Button.vue";
 
 import { mapState } from "vuex";
 
@@ -48,8 +48,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/globals";
-@import "@/styles/mixins";
+@import "../styles/globals";
+@import "../styles/mixins";
 
 .details {
   margin: 1rem auto;

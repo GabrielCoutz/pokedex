@@ -5,8 +5,8 @@
 </template>
 
 <script>
-import Busca from "@/components/Busca.vue";
-import PokemonList from "@/components/PokemonList.vue";
+import Busca from "../components/Busca.vue";
+import PokemonList from "../components/PokemonList.vue";
 
 export default {
   name: "Home",
@@ -15,10 +15,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/globals";
+@import "../styles/globals";
 
 .home {
   width: 100%;
-  
 }
 </style>

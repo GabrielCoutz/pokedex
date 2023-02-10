@@ -12,6 +12,11 @@ const routes = [
     name: "Detalhes",
     props: true,
   },
+  {
+    path: "/:catchAll(.*)",
+    name: "NaoEncontrado",
+    component: () => import("@/views/NaoEncontrado.vue"),
+  },
 ];
 
 const router = createRouter({

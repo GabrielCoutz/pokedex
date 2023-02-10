@@ -11,9 +11,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/variables";
-@import "@/styles/globals";
-@import "@/styles/mixins";
+@import "../styles/variables";
+@import "../styles/globals";
+@import "../styles/mixins";
 
 .wrapperHeader {
   background-color: $white;

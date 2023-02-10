@@ -16,8 +16,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/styles/reset.scss";
-@import "@/styles/variables";
+@import "./styles/reset.scss";
+@import "./styles/variables";
 
 #app {
   display: flex;

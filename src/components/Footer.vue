@@ -13,7 +13,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/variables";
+@import "../styles/variables";
 
 .wrapperFooter {
   background-color: $white;

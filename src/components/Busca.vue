@@ -12,7 +12,7 @@
 
 <script>
 import { mapState } from "vuex";
-import Button from "@/components/Button.vue";
+import Button from "../components/Button.vue";
 
 export default {
   data() {
@@ -106,7 +106,7 @@ form {
     }
 
     &::before {
-      content: url("@/assets/pokeball.svg");
+      content: url("../assets/pokeball.svg");
       display: inline-block;
     }
 

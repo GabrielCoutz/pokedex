@@ -4,7 +4,7 @@
 
 <script>
 import { mapState } from "vuex";
-import Card from "@/components/Pokemon/Card.vue";
+import Card from "../components/Pokemon/Card.vue";
 
 export default {
   components: {
@@ -18,5 +18,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/globals";
+@import "../styles/globals";
 </style>

@@ -21,8 +21,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/variables";
-@import "@/styles/mixins";
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 .card {
   border-radius: 8px;
