@@ -12,7 +12,7 @@ _(claro, vocês que decidem :smirk:)_
 
 :white_check_mark: Organização do projeto.
 
-:white_check_mark: Estilo de codificação, ou seja, sua abordagem (não se você usa ponto e vírgula ou não)
+:white_check_mark: Estilo de codificação, ou seja, sua abordagem (não se você usa ponto e vírgula ou não);
 
 :white_check_mark: Manutenibilidade e extensibilidade
 
