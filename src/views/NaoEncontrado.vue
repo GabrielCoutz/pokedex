@@ -1,9 +1,29 @@
 <template>
-  <h1>NaoEncontrado</h1>
+  <section class="notFound">
+    <h1>Página não encontrada.</h1>
+    <Button class="link" v-if="!loading">
+      <router-link to="/">Voltar</router-link>
+    </Button>
+  </section>
 </template>
 
 <script>
-export default {};
+import Button from "../components/Button.vue";
+
+export default {
+  components: {
+    Button,
+  },
+};
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.notFound {
+  margin: 0 auto;
+  text-align: center;
+
+  .link {
+    margin-top: 1rem;
+  }
+}
+</style>
