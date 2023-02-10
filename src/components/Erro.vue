@@ -19,5 +19,6 @@ export default {
   text-align: center;
   grid-row: 1;
   grid-column: 1/-1;
+  margin: 1rem 0;
 }
 </style>

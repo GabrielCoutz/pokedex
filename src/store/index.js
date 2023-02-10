@@ -31,7 +31,10 @@ export default createStore({
         const evolution = await getPokemonEvolution(payload);
         context.commit("SET_POKEMON", { ...response.data, color, evolution });
       } catch (e) {
-        context.commit("SET_ERRO", "Não foi possível encontrar este pokemon.");
+        context.commit(
+          "SET_ERRO",
+          `Não foi possível encontrar o pokemon '${payload}'.`
+        );
       } finally {
         context.commit("SET_LOADING", false);
       }
