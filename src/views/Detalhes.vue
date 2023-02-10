@@ -32,6 +32,11 @@ export default {
 
   created() {
     this.searchPokemon();
+    document.title = `PokeSearch | ${this.name}`;
+  },
+
+  beforeUnmount() {
+    document.title = "PokeSearch";
   },
 
   computed: {
