@@ -6,11 +6,10 @@
 
 <script>
 import SearchInput from "../components/SearchInput.vue";
-import PokemonList from "../components/PokemonList.vue";
 
 export default {
   name: "Home",
-  components: { SearchInput, PokemonList },
+  components: { SearchInput },
 };
 </script>
 
